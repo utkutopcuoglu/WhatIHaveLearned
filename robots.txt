@@ -1,1 +1,1 @@
-Sitemap: https://utkutopcuoglu.github.io/first_personal_blog/sitemap.xml
+Sitemap: https://utkutopcuoglu.github.io/WhatIHaveLearned/sitemap.xml
