@@ -1,19 +1,22 @@
 ---
 # Front matter to customize blog post. (YAML format)
+# Put this file to _posts for it to appear on your blog.
 #Note: It is recommended to enclose these values in double quotes, so that you can escape colons and other characters that may break the YAML parser.
 title: "My Title"
+sticky_rank: 1 # To choose homepage appearance order. By default posts are sorted according to their dates.
 description: "Awesome description"
 layout: post
 toc: false # Automatic table of content generation.
 comments: true
-image: images/some_folder/your_image.png
-hide: false
-search_exclude: true
+image: images/logo.jpg
+hide: false # hide from homepage
+search_exclude: true # set the front matter search_exclude to false if you don't want users to find your hidden post in a search.
 categories: [fastpages, jupyter]
 metadata_key1: metadata_value1
 metadata_key2: metadata_value2
 ---
 
+# date-postname -> posts appear on the website header links.
 # Add the following to where you want the comments to appear:
 <script src="https://utteranc.es/client.js"
         repo="[ENTER REPO HERE]"
@@ -23,3 +26,5 @@ metadata_key2: metadata_value2
         crossorigin="anonymous"
         async>
 </script>
+
+* 

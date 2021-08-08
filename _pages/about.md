@@ -4,8 +4,4 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
-
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+I have graduated from Bilkent University Electrical and Electronics Engineering. But currently, I work as a AI Engineer in a start-up company. I work on problems related to software development and computer vision. You can check my LinkedIn account for further information [here]().
