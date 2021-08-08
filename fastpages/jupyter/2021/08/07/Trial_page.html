@@ -4,18 +4,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>fastpages | An easy to use blogging platform with support for Jupyter Notebooks.</title>
+<title>Why Convolutions? | fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="fastpages" />
+<meta property="og:title" content="Why Convolutions?" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://utkutopcuoglu.github.io/WhatIHaveLearned/" />
-<meta property="og:url" content="https://utkutopcuoglu.github.io/WhatIHaveLearned/" />
+<meta name="description" content="Why do we use Convolutions in CNN" />
+<meta property="og:description" content="Why do we use Convolutions in CNN" />
+<link rel="canonical" href="https://utkutopcuoglu.github.io/WhatIHaveLearned/fastpages/jupyter/2021/08/07/Trial_page.html" />
+<meta property="og:url" content="https://utkutopcuoglu.github.io/WhatIHaveLearned/fastpages/jupyter/2021/08/07/Trial_page.html" />
 <meta property="og:site_name" content="fastpages" />
-<meta property="og:image" content="https://utkutopcuoglu.github.io/WhatIHaveLearned/images/logo.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-08-07T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"An easy to use blogging platform with support for Jupyter Notebooks.","url":"https://utkutopcuoglu.github.io/WhatIHaveLearned/","@type":"WebSite","headline":"fastpages","image":"https://utkutopcuoglu.github.io/WhatIHaveLearned/images/logo.jpg","name":"fastpages","@context":"https://schema.org"}</script>
+{"description":"Why do we use Convolutions in CNN","url":"https://utkutopcuoglu.github.io/WhatIHaveLearned/fastpages/jupyter/2021/08/07/Trial_page.html","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://utkutopcuoglu.github.io/WhatIHaveLearned/fastpages/jupyter/2021/08/07/Trial_page.html"},"headline":"Why Convolutions?","dateModified":"2021-08-07T00:00:00-05:00","datePublished":"2021-08-07T00:00:00-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/WhatIHaveLearned/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://utkutopcuoglu.github.io/WhatIHaveLearned/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/WhatIHaveLearned/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -67,51 +68,62 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p>I am a deep learning enthusiast and a self-educator in related fields (machine learning).</p>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-<p>In this site, I am planning to share with you things I have learned (in a broad aspect). My posts will be mostly about
-machine learning, software development and other useful experiences in my professional life.</p>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Why Convolutions?</h1><p class="page-description">Why do we use Convolutions in CNN</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-07T00:00:00-05:00" itemprop="datePublished">
+        Aug 7, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
 
-<p>I hope you find my posts helpful!</p>
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/WhatIHaveLearned/categories/#fastpages">fastpages</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/WhatIHaveLearned/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
 
-<h1 id="posts">Posts</h1>
+    </header>
 
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="brief">Brief</h1>
+<p>Convolutional Neural Networks are special type of networks which are used widely in computer vision (tasks like object detection, tracking, segmentation etc.). It imitates the visual cortex and is a very important field in deep learning (since there are plenty of image data for these data hungry models.).</p>
 
+<p>I will briefly explain a simple CNN architecture and important functions in between.</p>
 
-  
+<p>A simple CNN architecture includes the <strong>convolution</strong>, <strong>activation function</strong>, <strong>pooling</strong>, <strong>flattening</strong> operations which might be then connected to a regular neural network (<strong>dense layer</strong>) with a <strong>softmax</strong> classifier (for normal classification) or multiple <strong>sigmoid</strong> outputs (for multi-class classificaton).</p>
 
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
+<p>In this post I will only focus on why convolution is useful.</p>
 
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
+<h3 id="why-convolutions">Why Convolutions?</h3>
+<p>Regular neural networks can learn from pixels also, but it will use all pixels as inputs and meanwhile might overfit to the noise in the image. This way a regular NN needs many more images to learn the relations between pixels and much it will have much more parameters to learn. But we can make it easier for it learn by focusing on the probably most important information in an image.</p>
 
- 
-  
+<p>To human eye, a single pixel has no value, but a group of pixels can form a shape (eye, cat, etc.). Especially close pixels can carry more meaningful spatial information. This means if we focus on regions, rather than single pixels, we might even be able to avoid looking to the whole picture -&gt; hence we will have less features (pixels) to care about and less parameters -&gt; this way we can learn faster in a more efficient way.</p>
 
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/WhatIHaveLearned/fastpages/jupyter/2021/08/07/Trial_page.html">
-    Why Convolutions?
-    </a>
-</h3><p class="post-meta-description">Why do we use Convolutions in CNN</p><p class="post-meta">Aug 7, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/WhatIHaveLearned/jupyter/2020/02/20/test.html">
-    Fastpages Notebook Blog Post
-    </a>
-</h3><p class="post-meta-description">A tutorial of fastpages for Jupyter notebooks.</p><p class="post-meta">Feb 20, 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/WhatIHaveLearned/markdown/2020/01/14/test-markdown-post.html">
-    An Example Markdown Post
-    </a>
-</h3><p class="post-meta-description">A minimal example of using markdown with fastpages.</p><p class="post-meta">Jan 14, 2020</p>
-</li></ul>
+<p>This is what the convolution operation does. It looks at a region in an image and adds a non-linearity function (activation function) just like a regular neural network. This way the relation between pixels can be understood with much less parameters and processing. This is also called <strong>Sparsity of Connections</strong>. Another advantage, the information we learn by looking at small regions share many features (like edges, corners) which can be generalized across the image and re-used for many regions over the image. Being able to re-use the same convolution operation (or filter) is called <strong>Parameter Sharing</strong> and it also reduces the parameters in CNN (that has to be learned.).</p>
 
-    </div>
+<p>To summarize, the <strong>Sparsity of Connections</strong> and <strong>Parameter Sharing</strong> makes the convolution operation particularly useful in CNNs.</p>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="utkutopcuoglu/WhatIHaveLearned"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/WhatIHaveLearned/fastpages/jupyter/2021/08/07/Trial_page.html" hidden></a>
+</article>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/WhatIHaveLearned/"></data>
