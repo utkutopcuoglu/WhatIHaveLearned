@@ -7,7 +7,7 @@ comments: true
 # image: images/some_folder/your_image.png
 hide: false # hide from homepage
 search_exclude: true # set the front matter search_exclude to false if you don't want users to find your hidden post in a search.
-categories: [fastpages, jupyter] # Add tags to table of content
+categories: [Why Convolutions?] # Add tags to table of content
 # You can toggle the display of tags on/off by setting show_tags to true or false in _config.yml:
 # Set this to true to display tags on each post
 # show_tags: true
@@ -21,7 +21,7 @@ Convolutional Neural Networks are special type of networks which are used widely
 I will briefly explain a simple CNN architecture and important functions in between.
 
 A simple CNN architecture includes the **convolution**, **activation function**, **pooling**, **flattening** operations which might be then connected to a regular neural network (**dense layer**) with a **softmax** classifier (for normal classification) or multiple **sigmoid** outputs (for multi-class classificaton).
-
+<img src="images/CNN/simple_model.png"/>
 In this post I will only focus on why convolution is useful.
 
 ### Why Convolutions?
